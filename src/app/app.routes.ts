@@ -49,6 +49,7 @@ export const routes: Routes = [
         component: MoneyTransferFormComponent,
         canActivate: [transformGuardGuard],
       },
+      { path: 'help', component: HelpComponent },
       { path: '404', component: ErrorComponent },
     ],
   },
