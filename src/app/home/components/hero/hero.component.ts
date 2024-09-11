@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { MoneyInputComponent } from '../../../shared/money-input/money-input.component';
 import { ButtonComponent } from '../../../shared/button/button.component';
 import { Router } from '@angular/router';
-import { currency } from '../../../models/currency';
+// import { currency } from '../../../models/currency';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ShareInputService } from '../../../services/share-input/share-input.service';
@@ -50,14 +50,14 @@ export class HeroComponent {
       (this.inputFrom / this.selectedCurrency.rateFrom) *
       this.selectedCurrency.rateTo;
   }
-  selectCurrencyFrom(currency: currency) {
-    this.selectedCurrency.codeFrom = currency.currency_code;
-    this.selectedCurrency.rateFrom = currency.exchange_rate;
-    this.convertAmount();
-  }
-  selectCurrencyTo(currency: currency) {
-    this.selectedCurrency.codeTo = currency.currency_code;
-    this.selectedCurrency.rateTo = currency.exchange_rate;
-    this.convertAmount();
-  }
+  // selectCurrencyFrom(currency: currency) {
+  //   this.selectedCurrency.codeFrom = currency.currency_code;
+  //   this.selectedCurrency.rateFrom = currency.exchange_rate;
+  //   this.convertAmount();
+  // }
+  // selectCurrencyTo(currency: currency) {
+  //   this.selectedCurrency.codeTo = currency.currency_code;
+  //   this.selectedCurrency.rateTo = currency.exchange_rate;
+  //   this.convertAmount();
+  // }
 }
