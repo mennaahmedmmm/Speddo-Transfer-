@@ -1,0 +1,48 @@
+<section class="bg-cover bg-center h-screen w-full bg-hero">
+  <div class="container mx-auto flex items-center justify-evenly h-full">
+    <div class="text-gray-0 w-[44%]">
+      <p class="text-paragraph font-semibold">Simple. Quick. Secure.</p>
+      <h1 class="text-h1 font-semibold">Send Money</h1>
+      <h1 class="text-h1 font-bold">Anywhere, Instantly</h1>
+      <p class="mt-4 w-[67%] text-body font-medium">
+        Fast, secure, and affordable international money transfers. Get started
+        in minutes
+      </p>
+      <button
+        class="mt-6 bg-primary-300 px-6 py-3 rounded text-body font-medium"
+      >
+        Create An Account
+      </button>
+    </div>
+    <div class="w-[33%] bg-gray-0 p-8 rounded-lg">
+      <p class="mb-3">Send amount</p>
+
+      <div class="flex items-center">
+        <input
+          type="number"
+          class="border border-gray-40 rounded-l-lg py-4 px-4 w-full"
+          placeholder="1000"
+          [(ngModel)]="inputFrom"
+        
+        />
+      </div>
+      <div class="flex items-center">
+
+      </div>
+
+      <p class="my-5 text-body font-regular text-gray-100">
+        Delivery Time:
+        <span class="font-medium text-gray-700">By May 20th</span>
+      </p>
+      <app-button
+        [text]="'Continue'"
+        [width]="'100%'"
+        (click)="goTOTransfer()"
+      ></app-button>
+      <p class="mt-5 text-body font-medium text-gray-100">
+        By Clicking Continue, I'm agree with
+        <span class="text-primary-300">Terms & Policy</span>
+      </p>
+    </div>
+  </div>
+</section>

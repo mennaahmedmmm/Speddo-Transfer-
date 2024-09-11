@@ -1,0 +1,45 @@
+
+<header class="bg-gray-0 h-[71px] flex items-center">
+  <div class="mx-auto flex justify-between items-center w-[90%]">
+    <a routerLink="home" class="text-small-title font-semibold text-gray-900">
+      Speedo Transfer
+    </a>
+    <nav class="space-x-8 flex items-center">
+      <a routerLink="home" class="text-gray-700 text-body font-medium">Home</a>
+      <a
+        routerLink="main-page/transfer"
+        class="text-gray-700 text-body font-medium"
+      >
+        Money Transfer
+      </a>
+      <a
+        routerLink="main-page/myAccount"
+        class="text-gray-700 text-body font-medium"
+      >
+        My Account
+      </a>
+      <a
+        routerLink="main-page/help"
+        class="font-medium"
+        style="color: rgb(135, 30, 53);"
+      >
+        Help
+      </a>
+      <button
+        (click)="toLogin()"
+        *ngIf="!isLogin"
+        class="px-4 h-[46px] rounded-md border-[1px] border-gray-900 text-gray-900 text-body font-medium"
+      >
+        Login
+      </button>
+      <button
+        (click)="toRegister()"
+        *ngIf="!isLogin"
+        class="bg-primary-300 px-4 h-[46px] rounded-md text-gray-0 text-body font-medium"
+      >
+        Register Now
+      </button>
+      <app-user-options *ngIf="isLogin"></app-user-options>
+    </nav>
+  </div>
+</header>
